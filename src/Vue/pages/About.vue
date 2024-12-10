@@ -3,10 +3,10 @@
     <div class="container-fluid">
       <h1 class="section-header">{{ heading }}</h1>
       <h2 class="tagline" :v-if="about.tagline !==''">{{about.tagline}}</h2>
-      <div class="row">
+      <div class="row justify-content-center flex-col ">
+        <!--          data-aos="fade-right"-->
         <div
-          class="col-sm-12 col-md-4 flex-col"
-          data-aos="fade-right"
+          class="col-4 "
           data-aos-duration="1000"
         >
           <img
@@ -17,27 +17,26 @@
         </div>
         <div
           class="col-sm-12 col-md-4 flex-col"
-          data-aos="fade-right"
           data-aos-duration="1000"
         >
           <p id="about-content">
-            <span id="greeting">I'm {{ name }}! </span>
+            <span id="greeting">Hallo, Ich bin {{ name }}! </span>
             <span id="bio" v-html="about.bio"></span>
           </p>
         </div>
 
-        <div
-          class="col-sm-12 col-md-4 flex-col"
-          data-aos="fade-right"
-          data-aos-duration="1000"
-        >
-          <ul class="list-group list-group-flush">
-            <li v-for="item in facts" :key="item.name" class="list-group-item">
-              <h3 class="d-inline">{{ item.name }}: </h3>
-              <br class="d-md-none" />{{ item.value }}
-            </li>
-          </ul>
-        </div>
+<!--        <div-->
+<!--          class="col-sm-12 col-md-4 flex-col"-->
+<!--          data-aos="fade-right"-->
+<!--          data-aos-duration="1000"-->
+<!--        >-->
+<!--          <ul class="list-group list-group-flush">-->
+<!--            <li v-for="item in facts" :key="item.name" class="list-group-item">-->
+<!--              <h3 class="d-inline">{{ item.name }}: </h3>-->
+<!--              <br class="d-md-none" />{{ item.value }}-->
+<!--            </li>-->
+<!--          </ul>-->
+<!--        </div>-->
       </div>
     </div>
 

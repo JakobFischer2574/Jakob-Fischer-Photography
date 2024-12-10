@@ -1,6 +1,6 @@
 <template>
   <header id="home" class="bg">
-    <nav class="navbar navbar-expand-lg fixed-top dark-bg">
+    <nav class="navbar navbar-expand-lg fixed-top dark-bg" style="box-shadow: #222222 0 0 10px">
       <a class="navbar-brand" href="#">
         <div v-if="main.logo"><img src="../../assets/images/logo.png" alt="logo" id="Logo"></div>
         <div v-if="!main.logo">
@@ -23,10 +23,10 @@
           <li class="active-nav">
             <a class="nav-item nav-link" href="#home">Home</a>
           </li>
-          <li><a class="nav-item nav-link" href="#about">About</a></li>
-          <li><a class="nav-item nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-item nav-link" href="#about">Über mich</a></li>
+<!--          <li><a class="nav-item nav-link" href="#skills">Skills</a></li>-->
           <li><a class="nav-item nav-link" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-item nav-link" href="#contact">Contact</a></li>
+          <li><a class="nav-item nav-link" href="#contact">Kontakt</a></li>
         </ul>
       </div>
     </nav>

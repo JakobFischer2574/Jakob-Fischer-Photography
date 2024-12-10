@@ -5,12 +5,10 @@
       <div class="row">
         <div
           class="col-sm-12 col-md-6 flex-col"
-          data-aos="fade-right"
-          data-aos-duration="1000"
           style="margin: 0 auto;"
         >
           <div class="contact-content">
-            <h2>Connect with Me</h2>
+            <h2>Zögern Sie nicht, mich zu kontaktieren</h2>
             <div class="contact-text">{{ contact.text }}</div>
 
             <div class="contact-info">
@@ -52,6 +50,9 @@
                     :key="i"
                     class="social-item social-spacing list-inline-item"
                   >
+<!--                    <a :href="item.url" :alt="item.name">-->
+<!--                      <span>{{ item.name }}</span>-->
+<!--                    </a>-->
                     <a :href="item.url" :alt="item.name">
                       <i :class="'fa-lg '+item.faClass"> </i>
                     </a>
@@ -71,8 +72,6 @@
         </div>
         <div
           class="col-sm-12 col-md-6 flex-col"
-          data-aos="fade-right"
-          data-aos-duration="1000"
           v-if="contact.form"
 
         >

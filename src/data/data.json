@@ -1,38 +1,41 @@
 {
   "main": {
     "name": {
-        "first": "Bob",
-        "last": "Ross"
+        "first": "Jakob",
+        "last": "Fischer"
     },
     "logo": true,
+    "title": "Photography",
     "titles": [
         "Famous Painter.",
         "Television Host.",
         "America's Sweetheart."
     ],
     "headings": {
-      "about": "About",
+      "about": "Über mich",
       "skills": "Skills",
       "portfolio": "Portfolio",
-      "contact": "Contact"
+      "contact": "Kontakt"
     }
   },
     "about": {
-      "bio": "I discovered oil painting while I was enlisted in the U.S. Air Force in Alaska in the early 1960s. I studied the 'wet-on-wet' technique, also known as 'Alla Prima', used by other great painters such as Rembrandt & Monet. This allowed me to produce complete paintings in less than an hour. I then became an art instructor, creating my iconic image and eventually teaching a TV audience of millions on the TV show The Joy of Painting.",
-      "tagline": "We don't make mistakes, just happy little accidents",
+      "bio": "Schon seit meiner Kindheit liebe ich das Fotografieren . Seit einigen Jahren betreibe ich dieses Hobby professionell. Ich konnte schon unter meinen Freunden und Bekannten meine Fähigkeiten unter Beweis stellen. Im Laufe der Jahre habe ich viel über Fotografie gelernt, was geht und was nicht. Was auch immer Sie sich vorstellen, kontaktieren Sie mich und ich helfe Ihnen, Ihre Ideen zu verwirklichen.",
+      "tagline": "",
       "facts": [
-        {"name": "Hometown",
-        "value": "Orlando, FL"
+        {"name": "Alter",
+          "value": "20 Jahre"
         },
-        {"name": "Painting Technique",
-        "value": "Alla Prima"
+        {"name": "Heimertstadt",
+          "value": "Eschborn"
         },
-        {"name": "# of Paintings",
-        "value": "1,143"
+        {"name": "Tätigkeit",
+          "value": "Duales Informatikstudium"
         },
-        {"name": "Sun Sign",
-          "value": "Scorpio"
+        {"name": "Hobbys",
+          "value": "Fotografiren, Kino, Outdoor, Programmiren"
         }
+
+
       ]
     },
     "skills": {
@@ -87,107 +90,289 @@
     ]
   },
 "portfolio": {
-  "defaultFilter": "mountains",
+  "defaultFilter": "Weddings",
   "projects": [
     {
-      "title": "Peaceful Valley",
-      "description": "S1E8",
-      "image": "peacefulvalley.png",
-      "link": "https://www.twoinchbrush.com/painting/peaceful-valley",
-      "source": "https://www.twoinchbrush.com/painting/peaceful-valley",
-      "filter": "mountains"
+      "title": "weddingPicture",
+      "image": "weddingPicture/weddingPicture1.jpg",
+      "filter": "Weddings",
+      "upright": true
+    },
+    {
+      "title": "weddingPicture",
+      "image": "weddingPicture/weddingPicture2.jpg",
+      "filter": "Weddings",
+      "upright": false
+    },
+    {
+      "title": "weddingPicture",
+      "image": "weddingPicture/weddingPicture3.jpg",
+      "filter": "Weddings",
+      "upright": true
+    },
+    {
+      "title": "weddingPicture",
+      "image": "weddingPicture/weddingPicture4.jpg",
+      "filter": "Weddings",
+      "upright": false
+    },
+    {
+      "title": "weddingPicture",
+      "image": "weddingPicture/weddingPicture5.jpg",
+      "filter": "Weddings",
+      "upright": false
+    },
+    {
+      "title": "weddingPicture",
+      "image": "weddingPicture/weddingPicture6.jpg",
+      "filter": "Weddings",
+      "upright": true
+    },
+    {
+      "title": "weddingPicture",
+      "image": "weddingPicture/weddingPicture7.jpg",
+      "filter": "Weddings",
+      "upright": false
+    },
+    {
+      "title": "weddingPicture",
+      "image": "weddingPicture/weddingPicture8.jpg",
+      "filter": "Weddings",
+      "upright": true
+    },
+    {
+      "title": "weddingPicture",
+      "image": "weddingPicture/weddingPicture9.jpg",
+      "filter": "Weddings",
+      "upright": true
+    },
+    {
+      "title": "weddingPicture",
+      "image": "weddingPicture/weddingPicture10.jpg",
+      "filter": "Weddings",
+      "upright": false
+    },
+    {
+      "title": "weddingPicture",
+      "image": "weddingPicture/weddingPicture11.jpg",
+      "filter": "Weddings",
+      "upright": true
+    },
+    {
+      "title": "weddingPicture",
+      "image": "weddingPicture/weddingPicture12.jpg",
+      "filter": "Weddings",
+      "upright": true
+    },
+    {
+      "title": "weddingPicture",
+      "image": "weddingPicture/weddingPicture13.jpg",
+      "filter": "Weddings",
+      "upright": true
+    },
+    {
+      "title": "weddingPicture",
+      "image": "weddingPicture/weddingPicture14.jpg",
+        "filter": "Weddings",
+        "upright": true
+    },
+    {
+      "title": "weddingPicture",
+      "image": "weddingPicture/weddingPicture15.jpg",
+      "filter": "Weddings",
+      "upright": false
+    },
+    {
+      "title": "weddingPicture",
+      "image": "weddingPicture/weddingPicture16.jpg",
+      "filter": "Weddings",
+      "upright": false
+    },
+    {
+      "title": "weddingPicture",
+      "image": "weddingPicture/weddingPicture17.jpg",
+      "filter": "Weddings",
+      "upright": true
+    },
+    {
+      "title": "portraitPicture1",
+      "image": "portraitPicture/portraitPicture1.jpg",
+      "filter": "Portraits",
+      "upright": true
         },
     {
-      "title": "Meadow Lake",
-      "description": "S2E1",
-      "image": "meadowlake.png",
-      "link": "https://www.twoinchbrush.com/painting/meadow-lake",
-      "source": "https://www.twoinchbrush.com/painting/meadow-lake",
-      "filter": "mountains"
+      "title": "portraitPicture2",
+      "image": "portraitPicture/portraitPicture2.jpg",
+      "filter": "Portraits",
+      "upright": true
     },
     {
-      "title": "Final Grace",
-      "description": "S2E13",
-      "image": "finalgrace.png",
-      "link": "https://www.twoinchbrush.com/painting/final-grace",
-      "source": "https://www.twoinchbrush.com/painting/final-grace",
-      "filter": "mountains"
+      "title": "portraitPicture3",
+      "image": "portraitPicture/portraitPicture3.jpg",
+      "filter": "Portraits",
+      "upright": false
     },
     {
-      "title": "Purple Splendor",
-      "description": "S4E1",
-      "image": "purplesplendor.png",
-      "link": "https://www.twoinchbrush.com/painting/purple-splendor",
-      "source": "https://www.twoinchbrush.com/painting/purple-splendor",
-      "filter": "snow"
+      "title": "portraitPicture4",
+      "image": "portraitPicture/portraitPicture4.jpg",
+      "filter": "Portraits",
+        "upright": true
     },
     {
-      "title": "Winter Stillness",
-      "description": "S5E4",
-      "image": "winterstillness.png",
-      "link": "https://www.twoinchbrush.com/painting/winter-stillness",
-      "source": "https://www.twoinchbrush.com/painting/winter-stillness",
-      "filter": "snow"
+      "title": "portraitPicture5",
+      "image": "portraitPicture/portraitPicture5.jpg",
+      "filter": "Portraits",
+      "upright": true
     },
     {
-      "title": "Grey Winter",
-      "description": "S7E11",
-      "image": "greywinter.png",
-      "link": "https://www.twoinchbrush.com/painting/grey-winter",
-      "source": "https://www.twoinchbrush.com/painting/grey-winter",
-      "filter": "snow"
+      "title": "portraitPicture6",
+      "image": "portraitPicture/portraitPicture6.jpg",
+      "filter": "Portraits",
+        "upright": true
     },
     {
-      "title": "Bubbling Stream",
-      "description": "S3E3",
-      "image": "bubblingstream.png",
-      "link": "https://www.twoinchbrush.com/painting/bubbling-stream",
-      "source": "https://www.twoinchbrush.com/painting/bubbling-stream",
-      "filter": "water"
+      "title": "portraitPicture7",
+      "image": "portraitPicture/portraitPicture7.jpg",
+      "filter": "Portraits",
+        "upright": true
     },
     {
-      "title": "Blaze of Color",
-      "description": "S6E13",
-      "image": "blazeofcolor.png",
-      "link": "https://www.twoinchbrush.com/painting/blaze-of-color",
-      "source": "https://www.twoinchbrush.com/painting/blaze-of-color",
-      "filter": "water"
+      "title": "portraitPicture8",
+      "image": "portraitPicture/portraitPicture8.jpg",
+      "filter": "Portraits",
+        "upright": true
+    },
+
+    {
+      "title": "couplePicture1",
+      "image": "couplePicture/couplePicture1.jpg",
+      "filter": "Couples",
+        "upright": true
     },
     {
-      "title": "Night Light",
-      "description": "S3E8",
-      "image": "nightlight.png",
-      "link": "https://www.twoinchbrush.com/painting/night-light",
-      "source": "https://www.twoinchbrush.com/painting/night-light",
-      "filter": "water"
+      "title": "couplePicture2",
+      "image": "couplePicture/couplePicture2.jpg",
+      "filter": "Couples",
+        "upright": true
+    },
+    {
+      "title": "couplePicture3",
+      "image": "couplePicture/couplePicture3.jpg",
+      "filter": "Couples",
+        "upright": true
+    },
+    {
+      "title": "couplePicture4",
+      "image": "couplePicture/couplePicture4.jpg",
+      "filter": "Couples",
+        "upright": true
+    },
+    {
+      "title": "couplePicture5",
+      "image": "couplePicture/couplePicture5.jpg",
+      "filter": "Couples",
+        "upright": true
+    },
+    {
+      "title": "couplePicture6",
+      "image": "couplePicture/couplePicture9.jpg",
+      "filter": "Couples",
+        "upright": false
+    },
+    {
+      "title": "couplePicture7",
+      "image": "couplePicture/couplePicture7.jpg",
+      "filter": "Couples",
+        "upright": true
+    },
+    {
+      "title": "couplePicture8",
+      "image": "couplePicture/couplePicture8.jpg",
+      "filter": "Couples",
+        "upright": true
+    },
+    {
+      "title": "animalPicture1",
+      "image": "animalPicture/animalPicture1.jpg",
+      "filter": "Animals",
+        "upright": false
+    },
+    {
+      "title": "animalPicture2",
+      "image": "animalPicture/animalPicture2.jpg",
+      "filter": "Animals",
+        "upright": false
+    },
+    {
+      "title": "animalPicture3",
+      "image": "animalPicture/animalPicture3.jpg",
+      "filter": "Animals",
+      "upright": false
+    },
+    {
+      "title": "animalPicture4",
+      "image": "animalPicture/animalPicture4.jpg",
+      "filter": "Animals",
+      "upright": false
+    },
+    {
+      "title": "animalPicture5",
+      "image": "animalPicture/animalPicture5.jpg",
+      "filter": "Animals",
+      "upright": true
+    },
+    {
+      "title": "animalPicture6",
+      "image": "animalPicture/animalPicture6.jpg",
+      "filter": "Animals",
+      "upright": true
+    },
+    {
+      "title": "animalPicture7",
+      "image": "animalPicture/animalPicture7.jpg",
+      "filter": "Animals",
+        "upright": false
+    },
+    {
+      "title": "dronePicture1",
+      "image": "dronePicture/dronePicture1.jpg",
+      "filter": "Drone",
+        "upright": false
+    },
+    {
+      "title": "dronePicture2",
+      "image": "dronePicture/dronePicture2.jpg",
+      "filter": "Drone",
+        "upright": false
+    },
+    {
+      "title": "dronePicture3",
+      "image": "dronePicture/dronePicture3.jpg",
+      "filter": "Drone",
+        "upright": false
     }
 
   ]
 },
     "contact":{
-      "text": "It will be pretty hard to reach me, probably.",
-      "formTitle": "Send Me A Message",
+      "text": "Ich freu mich von Ihnen zu hören!",
+      "formTitle": "Schreiben Sie mir eine Nachricht",
       "formEndPoint": "",
-      "city": "Orlando, Florida",
-      "email": "info@bobross.com",
-      "phone": "1-800-BOB-ROSS",
+      "city": "Eschborn 65760",
+      "email": "jako.fischer@outlook.de",
+      "phone": "015755852165",
       "resumeLink": "https://www.twoinchbrush.com/all-paintings",
       "form": true,
       
       "social": [
-          {
-            "name": "twitter",
-            "url": "https://twitter.com/bobrossofficial",
-            "faClass": "fab fa-twitter"
-          },
-          {
-            "name": "facebook",
-            "url": "https://www.facebook.com/TheJoyofPaintingWithBobRoss/",
-            "faClass": "fab fa-facebook-f"
-          },
+        {
+          "name": "linkedin",
+          "url": "https://www.linkedin.com/in/jakob-fischer-74b6a8330/",
+          "faClass": "fab fa-linkedin"
+        },
           {
             "name": "instagram",
-            "url": "https://www.instagram.com/bobross_thejoyofpainting/",
+            "url": "https://www.instagram.com/Jakob_Fischer2574/",
             "faClass": "fab fa-instagram"
           }
         ]
