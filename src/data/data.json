@@ -242,7 +242,48 @@
       "filter": "Portraits",
         "upright": true
     },
-
+    {
+      "title": "portraitPicture9",
+      "image": "portraitPicture/portraitPicture9.jpg",
+      "filter": "Portraits",
+        "upright": false
+    },
+    {
+      "title": "portraitPicture10",
+      "image": "portraitPicture/portraitPicture10.jpg",
+      "filter": "Portraits",
+        "upright": true
+    },
+    {
+      "title": "portraitPicture11",
+      "image": "portraitPicture/portraitPicture11.jpg",
+      "filter": "Portraits",
+        "upright": true
+    },
+    {
+      "title": "portraitPicture12",
+      "image": "portraitPicture/portraitPicture12.jpg",
+      "filter": "Portraits",
+        "upright": true
+    },
+    {
+      "title": "portraitPicture13",
+      "image": "portraitPicture/portraitPicture13.jpg",
+      "filter": "Portraits",
+        "upright": true
+    },
+    {
+      "title": "portraitPicture14",
+      "image": "portraitPicture/portraitPicture14.jpg",
+      "filter": "Portraits",
+        "upright": true
+    },
+    {
+      "title": "portraitPicture15",
+      "image": "portraitPicture/portraitPicture15.jpg",
+      "filter": "Portraits",
+        "upright": false
+    },
     {
       "title": "couplePicture1",
       "image": "couplePicture/couplePicture1.jpg",
@@ -288,6 +329,18 @@
     {
       "title": "couplePicture8",
       "image": "couplePicture/couplePicture8.jpg",
+      "filter": "Couples",
+        "upright": true
+    },
+    {
+      "title": "couplePicture9",
+      "image": "couplePicture/couplePicture9.jpg",
+      "filter": "Couples",
+        "upright": true
+    },
+    {
+      "title": "couplePicture10",
+      "image": "couplePicture/couplePicture10.jpg",
       "filter": "Couples",
         "upright": true
     },
@@ -350,18 +403,30 @@
       "image": "dronePicture/dronePicture3.jpg",
       "filter": "Drone",
         "upright": false
+    },
+    {
+      "title": "dronePicture4",
+      "image": "dronePicture/dronePicture4.jpg",
+      "filter": "Drone",
+      "upright": false
+    },
+    {
+      "title": "dronePicture5",
+      "image": "dronePicture/dronePicture5.jpg",
+      "filter": "Drone",
+      "upright": false
     }
 
   ]
 },
     "contact":{
-      "text": "Ich freu mich von Ihnen zu hören!",
+      "text": "",
       "formTitle": "Schreiben Sie mir eine Nachricht",
       "formEndPoint": "",
       "city": "Eschborn 65760",
       "email": "jako.fischer@outlook.de",
       "phone": "015755852165",
-      "resumeLink": "https://www.twoinchbrush.com/all-paintings",
+      "resumeLink": "",
       "form": true,
       
       "social": [

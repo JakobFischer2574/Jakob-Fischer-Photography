@@ -8,7 +8,7 @@
           style="margin: 0 auto;"
         >
           <div class="contact-content">
-            <h2>Zögern Sie nicht, mich zu kontaktieren</h2>
+            <h2>Kontaktdaten</h2>
             <div class="contact-text">{{ contact.text }}</div>
 
             <div class="contact-info">
