@@ -36,8 +36,7 @@ jobs:
             # Option 1: Lösche alle Dateien im Zielordner
             # rm -rf /var/www/*
             # Option 2: Alternativ: Verschiebe alte Dateien in einen Backup-Ordner
-             mkdir -p /www_backup
-             mv /webseite/* /www_backup
+            mv /webseite/* /webseite_backup
 
  # Deploy only the dist folder via SFTP
       - name: SFTP Deploy
