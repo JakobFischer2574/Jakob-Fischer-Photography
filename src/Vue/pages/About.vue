@@ -3,10 +3,10 @@
     <div class="container-fluid">
       <h1 class="section-header">{{ heading }}</h1>
       <h2 class="tagline" :v-if="about.tagline !==''">{{about.tagline}}</h2>
-      <div class="row justify-content-center flex-col ">
+      <div class="row  ">
         <!--          data-aos="fade-right"-->
         <div
-          class="col-4 "
+          class="col-12 col-md-4 flex-col"
           data-aos-duration="1000"
         >
           <img
@@ -16,12 +16,18 @@
           />
         </div>
         <div
-          class="col-sm-12 col-md-4 flex-col"
+          class="col-sm-24 col-md-8 flex-col"
           data-aos-duration="1000"
         >
-          <p id="about-content">
-            <span id="greeting">Hallo, Ich bin {{ name }}! </span>
-            <span id="bio" v-html="about.bio"></span>
+          <p v-if="languageDE" id="about-content">
+            <span id="greeting">{{about.greetingDE}} {{ name }}! </span>
+            <span id="bio" v-html="about.bioDE"></span>
+            <i class="fas fa-language" @click="languageSwitch"></i>
+          </p>
+          <p v-if="!languageDE" id="about-content">
+            <span id="greeting">{{about.greetingEN}} {{ name }}! </span>
+            <span id="bio" v-html="about.bioEN"></span>
+            <i class="fas fa-language" @click="languageSwitch"></i>
           </p>
         </div>
 
@@ -60,8 +66,23 @@ export default {
       name: data.main.name.first,
       facts: data.about.facts,
       heading: data.main.headings.about,
+      languageDE: false
     };
   },
+  methods: {
+    languageSwitch() {
+      if(!this.languageDE){
+        this.languageDE = true;
+      }else {
+        this.languageDE = false;
+      }
+
+    },
+
+    closeLightbox() {
+      this.isLightboxVisible = false;
+    },
+  }
 };
 </script>
 

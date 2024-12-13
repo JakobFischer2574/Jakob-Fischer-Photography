@@ -8,7 +8,7 @@
           style="margin: 0 auto;"
         >
           <div class="contact-content">
-            <h2>Kontaktdaten</h2>
+            <h2>Contact details</h2>
             <div class="contact-text">{{ contact.text }}</div>
 
             <div class="contact-info">
@@ -58,12 +58,21 @@
                     </a>
                   </div>
                 </li>
-                <li class="list-group-item" v-if="contact.resumeLink !==''">
-                  <a :href="contact.resumeLink" target="_blank" alt="resume">
-                  <button class="btn btn-resume"  target="_blank">
-                    <i class="far fa-file-pdf"></i> Resume
-                  </button>
-                  </a>
+<!--                <li class="list-group-item" v-if="contact.resumeLink !==''">-->
+<!--                  <a :href="contact.resumeLink" target="_blank" alt="resume">-->
+<!--                  <button class="btn btn-resume"  target="_blank">-->
+<!--                    <i class="far fa-file-pdf"></i> Resume-->
+<!--                  </button>-->
+<!--                  </a>-->
+
+<!--                </li>-->
+                <li class="list-group-item">
+                  <h3 class="d-inline">
+                    <i class="fas fa-language"></i>  Available in:
+                  </h3>
+                  <br class="d-md-none" />
+
+                  <span>{{ contact.language }}</span>
 
                 </li>
               </ul>
@@ -80,38 +89,96 @@
 <!-- start of contact form  -->
 
 <div class="container contact-form">
-  <form :action="contact.formEndPoint" method="POST" target="_blank">
-    <div class="form-group">
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <span class="input-group-text bg-white">
-            <i class="fa fa-user"></i>&nbsp;
-          </span>
+<!--  <form :action="contact.formEndPoint" method="POST" target="_blank" enctype="multipart/form-data">-->
+<!--    <div class="form-group">-->
+<!--      <div class="input-group">-->
+<!--        <div class="input-group-prepend">-->
+<!--          <span class="input-group-text bg-white">-->
+<!--            <i class="fa fa-user"></i>&nbsp;-->
+<!--          </span>-->
+<!--        </div>-->
+<!--        <input name="name" type="name" placeholder="Name" class="form-control border-left-0" required>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--    <div class="form-group">-->
+<!--      <div class="input-group">-->
+<!--        <div class="input-group-prepend">-->
+<!--          <span class="input-group-text bg-white">-->
+<!--            <i class="fa fa-envelope"></i>-->
+<!--          </span>-->
+<!--        </div>-->
+<!--        <input name="email" type="email" placeholder="Email" class="form-control border-left-0" required>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--    <div class="form-group">-->
+<!--&lt;!&ndash;      <input type="text" class="form-control" id="message" rows="5" placeholder="Message" required>&ndash;&gt;-->
+<!--      <textarea class="form-control" id="message" rows="5" placeholder="Message" required></textarea>-->
+<!--    </div>-->
+
+<!--    <button type="submit" class="btn">-->
+<!--      <i class="fa fa-paper-plane"></i> -->
+<!--      Send-->
+<!--    </button>-->
+<!--  </form>-->
+
+<!--  <form action="https://formkeep.com/f/879e512258d5"-->
+<!--        accept-charset="UTF-8"-->
+<!--        enctype="multipart/form-data"-->
+<!--        method="POST">-->
+<!--    <input type="hidden" name="utf8" value="✓">-->
+
+<!--    <label for="email-address">Email Address</label>-->
+<!--    <input type="email" id="email-address" name="email">-->
+
+<!--    <label for="photo-album">Photos</label>-->
+<!--    <input type="text" id="text" multiple name="text">-->
+
+<!--    <button type="submit">Submit</button>-->
+<!--  </form>-->
+
+
+
+  <form action="https://formkeep.com/f/879e512258d5"
+        accept-charset="UTF-8"
+        enctype="multipart/form-data"
+        method="POST">
+    <input type="hidden" name="utf8" value="✓">
+      <div class="form-group">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text bg-white">
+              <i class="fa fa-user"></i>&nbsp;
+            </span>
+          </div>
+          <input type="name" id="name" name="name" class="form-control border-left-0" placeholder="Name">
         </div>
-        <input name="name" type="name" placeholder="Name" class="form-control border-left-0" required>
       </div>
-    </div>
 
-    <div class="form-group">
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <span class="input-group-text bg-white">
-            <i class="fa fa-envelope"></i>
-          </span>
+      <div class="form-group">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text bg-white">
+              <i class="fa fa-envelope"></i>
+            </span>
+          </div>
+          <input type="email" id="email-address" name="email" class="form-control border-left-0" placeholder="Email">
         </div>
-        <input name="email" type="email" placeholder="Email" class="form-control border-left-0" required>
       </div>
-    </div>
 
-    <div class="form-group">
-      <textarea class="form-control" id="message" rows="5" placeholder="Message" required></textarea>
-    </div>
+      <div class="form-group">
 
-    <button type="submit" class="btn">
-      <i class="fa fa-paper-plane"></i> 
-      Send
-    </button>
-  </form>
+        <textarea   type="text" id="text" multiple name="text" class="form-control" placeholder="Message"  rows="5" required></textarea>
+      </div>
+
+      <button type="submit" class="btn">
+        <i class="fa fa-paper-plane"></i>
+        Send
+      </button>
+    </form>
+
+
 </div>
 
 

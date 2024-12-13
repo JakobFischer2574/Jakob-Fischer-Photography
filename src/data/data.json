@@ -5,23 +5,27 @@
         "last": "Fischer"
     },
     "logo": true,
-    "title": "Photography",
+    "title": "PHOTOGRAPHY",
     "titles": [
         "Famous Painter.",
         "Television Host.",
         "America's Sweetheart."
     ],
     "headings": {
-      "about": "Über mich",
+      "about": "About me",
       "skills": "Skills",
       "portfolio": "Portfolio",
-      "contact": "Kontakt"
+      "contact": "Contact"
     }
   },
     "about": {
-      "bio": "Schon seit meiner Kindheit liebe ich das Fotografieren . Seit einigen Jahren betreibe ich dieses Hobby professionell. Ich konnte schon unter meinen Freunden und Bekannten meine Fähigkeiten unter Beweis stellen. Im Laufe der Jahre habe ich viel über Fotografie gelernt, was geht und was nicht. Was auch immer Sie sich vorstellen, kontaktieren Sie mich und ich helfe Ihnen, Ihre Ideen zu verwirklichen.",
+      "bioDE": "Seit meiner Kindheit fotografiere ich leidenschaftlich gerne. Professionell fotografiere ich seit einigen Jahren und konnte schon einige Projekte realisieren. Dabei habe ich gelernt, was in der Fotografie alles möglich ist und wie man auch die ausgefallensten Ideen umsetzen kann. Kontaktiere mich und ich helfe dir, deine Ideen zu verwirklichen.",
+      "bioEN": "I have been passionate about photography since I was a child. I have been photographing professionally for several years now and have already been able to realize several projects. In doing so, I have learned what is possible in photography and how to realize even the most unusual ideas. Contact me and I will help you to realize your ideas.",
+      "greetingDE": "Hi, ich bin",
+      "greetingEN": "Hi, I'm",
+
       "tagline": "",
-      "facts": [
+      "facts": ["",
         {"name": "Alter",
           "value": "20 Jahre"
         },
@@ -421,11 +425,12 @@
 },
     "contact":{
       "text": "",
-      "formTitle": "Schreiben Sie mir eine Nachricht",
-      "formEndPoint": "",
-      "city": "Eschborn 65760",
-      "email": "jako.fischer@outlook.de",
-      "phone": "015755852165",
+      "formTitle": "Contact Me",
+      "formEndPoint": "https://formkeep.com/f/879e512258d5",
+      "city": "Frankenweg 40, Eschborn, Germany",
+      "email": "contact@jakobfischer-photography.com",
+      "phone": "+4915755852165",
+      "language": "DE & EN",
       "resumeLink": "",
       "form": true,
       

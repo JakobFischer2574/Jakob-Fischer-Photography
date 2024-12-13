@@ -23,10 +23,10 @@
           <li class="active-nav">
             <a class="nav-item nav-link" href="#home">Home</a>
           </li>
-          <li><a class="nav-item nav-link" href="#about">Über mich</a></li>
+          <li><a class="nav-item nav-link" href="#about">About me</a></li>
 <!--          <li><a class="nav-item nav-link" href="#skills">Skills</a></li>-->
           <li><a class="nav-item nav-link" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-item nav-link" href="#contact">Kontakt</a></li>
+          <li><a class="nav-item nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
