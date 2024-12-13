@@ -1,8 +1,8 @@
 {
   "main": {
     "name": {
-        "first": "Jakob",
-        "last": "Fischer"
+        "first": "Hallo",
+        "last": "Welt!"
     },
     "logo": true,
     "title": "PHOTOGRAPHY",
@@ -427,7 +427,7 @@
       "text": "",
       "formTitle": "Contact Me",
       "formEndPoint": "https://formkeep.com/f/879e512258d5",
-      "city": "Frankenweg 40, Eschborn, Germany",
+      "city": "Eschborn, Germany",
       "email": "contact@jakobfischer-photography.com",
       "phone": "+4915755852165",
       "language": "DE & EN",

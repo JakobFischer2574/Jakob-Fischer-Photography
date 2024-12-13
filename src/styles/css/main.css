@@ -138,8 +138,7 @@ header {
   position: relative;
   height: 100%;
   width: 100%;
-  background: no-repeat center center fixed;
-  background-image: linear-gradient(to right bottom, rgba(34, 34, 34, 0.2), rgba(34, 34, 34, 0.2)), url(../../assets/images/header-background1.webp);
+  background: linear-gradient(to right bottom, rgba(34, 34, 34, 0.2), rgba(34, 34, 34, 0.2)), url(../../assets/images/header-background1.webp) no-repeat fixed center center;
   background-size: cover;
   -webkit-background-size: cover;
 
@@ -174,6 +173,19 @@ header {
     color: var(--light-color); }
     header .arrow-icon i:hover {
       color: var(--accent-color); }
+
+@media screen and (max-width: 1000px) {
+  header {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right bottom, rgba(34, 34, 34, 0.2), rgba(34, 34, 34, 0.2)), url(../../assets/images/header-background1.webp) no-repeat center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+
+    text-align: center;
+    box-shadow: #1d1f21 0 0 10px;}
+}
 
 .footer {
   background-color: #1d1f21;
