@@ -25,6 +25,21 @@ jobs:
           npm install
           npm run build
           
+      - name: Clean Remote Directory
+        uses: appleboy/ssh-action@v0.1.7
+        with:
+          host: ssh.strato.de
+          username: 570421463.swh.strato-hosting.eu
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
+            # Option 1: Lösche alle Dateien im Zielordner
+            # rm -rf /var/www/*
+            # Option 2: Alternativ: Verschiebe alte Dateien in einen Backup-Ordner
+             mkdir -p /www_backup
+             mv /webseite/* /www_backup
+
+ # Deploy only the dist folder via SFTP
       - name: SFTP Deploy
         uses: wlixcc/SFTP-Deploy-Action@v1.2.1
         with:
@@ -32,12 +47,7 @@ jobs:
           server: ssh.strato.de
           port: 22 # default is 22
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
- 
-          
-          # will put all file under this path
-          local_path: ./dist/* # default is ./*
-          # files will copy to under remote_path
-          remote_path: /webseite/
-          
-          # sftp args
+          local_path: ./dist/* # Deploy only the contents of the dist folder
+          remote_path: /webseite
           args: '-o ConnectTimeout=5'
+    
