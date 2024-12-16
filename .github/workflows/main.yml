@@ -25,15 +25,7 @@ jobs:
           npm install
           npm run build
           
-      - name: Remove old backup
-        uses: appleboy/ssh-action@v0.1.7
-        with:
-          host: ssh.strato.de
-          username: 570421463.swh.strato-hosting.eu
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: 22
-          script: 
-            rm webseite_backup
+  
           
       - name: Clean Remote Directory
         uses: appleboy/ssh-action@v0.1.7
