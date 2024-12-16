@@ -33,7 +33,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: 
-            rm -r webseite_backup
+            rm webseite_backup
           
       - name: Clean Remote Directory
         uses: appleboy/ssh-action@v0.1.7
