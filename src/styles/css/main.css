@@ -22,7 +22,7 @@ body,
 
 body {
   box-sizing: border-box;
-  overflow-x: hidden; }
+  overflow-x: hidden;}
 
 .light-section {
   background-color: var(--light-color);
@@ -267,6 +267,7 @@ header {
   cursor: pointer;
   background-color: transparent ;
   border: none;
+  outline: none;
 
 }
   #portfolio .bigImage .nextbtn{
@@ -414,3 +415,33 @@ font-size: 1rem;
     margin: auto; }
     .arrow-container .arrow-icon a {
       color: var(--light-color); }
+
+.fordergrung{
+/*     Diese Klasse soll den Ihnalt in die mitte der webseite bringen und in den vordergrund packen mit weißenm hintergrund und einem x zum schließen. der hintergrund soll dunkler werden und nicht mehr scrollbar*/
+  color: #1d1f21;
+  position: absolute; /* Fixiert das Element im Vordergrund */
+  top: 94px; /* Zentriert vertikal */
+ left: 0;
+
+  z-index: 1000; /* Bringt das Element in den Vordergrund */
+  background: white; /* Weißer Hintergrund */
+  padding: 50px; /* Optional: Innenabstand */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schöner Schatten */
+  border-radius: 8px; /* Abgerundete Ecken */
+  width: 100%;
+  text-align: left/* Optional: Anpassung der Breite */
+
+}
+
+.fordergrung .backbtn{
+  position: absolute;
+  top: -20px;
+  right: 20px;
+  border-radius: 50%;
+  color: black;
+  font-size: 5rem;
+  cursor: pointer;
+  background-color: transparent ;
+  border: none;
+  outline: none;
+}
