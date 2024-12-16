@@ -43,12 +43,13 @@
       <div v-if="this.showImprint">
         <div class="legalInformation">
           <button class="backbtn" @click="switchImprint">x</button>
-          <h2>Imprint:</h2>
-          <p>ww.jaokobfischer-photography.com owned by Jakob Fischer</p>
-          <p>Frankenweg 40, 65760 Eschborn, Germany</p>
-          <p>E-Mail: contact@jakobfischer-photography.com</p>
-          <p>Pho.: +4915755852165</p>
-          <p>Owner: Jakob Fischer</p>
+          <h1>Imprint:</h1>
+          <p>Last updated: December 16, 2024</p>
+          www.jaokobfischer-photography.com owned by Jakob Fischer
+          <br>Frankenweg 40, 65760 Eschborn, Germany
+          <br>E-Mail: contact@jakobfischer-photography.com
+          <br>Pho.: +4915755852165
+          <br>Owner: Jakob Fischer
         </div>
       </div>
       <a @click="switchPrivacyPolicy" style="cursor: pointer;" href="#">
