@@ -9,9 +9,6 @@
       <li class="list-inline-item">
         <a class="nav-item nav-link" href="#about">About me</a>
       </li>
-<!--      <li class="list-inline-item">-->
-<!--        <a class="nav-item nav-link" href="#skills">Skills</a>-->
-<!--      </li>-->
       <li class="list-inline-item">
         <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
       </li>
@@ -39,12 +36,12 @@
         {{ text.footer.copyrightText }}
       </p>
       <a @click="switchImprint" style="cursor: pointer;" href="#">
-      <p >
+      <p>
         Impressum
       </p>
       </a>
       <div v-if="this.showImprint">
-        <div class="fordergrung">
+        <div class="legalInformation">
           <button class="backbtn" @click="switchImprint">x</button>
           <h2>Imprint:</h2>
           <p>ww.jaokobfischer-photography.com owned by Jakob Fischer</p>
@@ -60,7 +57,7 @@
         </p>
       </a>
        <div v-if="this.showPrivacyPolicy">
-        <div class="fordergrung">
+        <div class="legalInformation">
           <button class="backbtn" @click="switchPrivacyPolicy">x</button>
           <h1>Privacy Policy</h1>
           <p>Last updated: December 16, 2024</p>

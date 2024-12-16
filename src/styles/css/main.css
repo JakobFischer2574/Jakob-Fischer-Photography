@@ -416,13 +416,11 @@ font-size: 1rem;
     .arrow-container .arrow-icon a {
       color: var(--light-color); }
 
-.fordergrung{
-/*     Diese Klasse soll den Ihnalt in die mitte der webseite bringen und in den vordergrund packen mit weißenm hintergrund und einem x zum schließen. der hintergrund soll dunkler werden und nicht mehr scrollbar*/
+.legalInformation{
   color: #1d1f21;
   position: absolute; /* Fixiert das Element im Vordergrund */
   top: 94px; /* Zentriert vertikal */
- left: 0;
-
+  left: 0;
   z-index: 1000; /* Bringt das Element in den Vordergrund */
   background: white; /* Weißer Hintergrund */
   padding: 50px; /* Optional: Innenabstand */
@@ -433,7 +431,7 @@ font-size: 1rem;
 
 }
 
-.fordergrung .backbtn{
+.legalInformation .backbtn{
   position: absolute;
   top: -20px;
   right: 20px;
