@@ -36,7 +36,7 @@ jobs:
             ls -la
             mv webseite webseite_backup
             ls -la
-            mkdir webseite/dist
+            mkdir -p webseite/dist
             ls -la
             echo "<!DOCTYPE html>
             <html lang='de'>
