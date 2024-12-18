@@ -4,8 +4,9 @@
   "description": "A Vue.js project",
   "main": "main.js",
   "scripts": {
+    "generate-files": "node generateFileList.js",
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "npm run generate-files && vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
