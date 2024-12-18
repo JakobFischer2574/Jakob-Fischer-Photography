@@ -45,9 +45,13 @@ jobs:
             ls -la
             mkdir webseite
             ls -la
-            cp src/update/index.html webseite/index.html
+            cp ./src/update/index.html webseite/
             ls -la webseite
-            
+
+      - name: Install Dependencies and Build
+        run: |
+          npm install
+          npm run build
             
 
  # Deploy only the dist folder via SFTP
@@ -59,6 +63,6 @@ jobs:
           port: 22 # default is 22
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
           local_path: dist # Deploy only the contents of the dist folder
-          remote_path: /webseite
+          remote_path: webseite/
           args: '-o ConnectTimeout=5'
     
