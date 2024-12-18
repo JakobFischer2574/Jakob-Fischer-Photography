@@ -28,10 +28,6 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            # Option 1: Lösche alle Dateien im Zielordner
-            # rm -rf /var/www/*
-            # Option 2: Alternativ: Verschiebe alte Dateien in einen Backup-Ordner
-            ls -la
             rm -rf webseite_backup
             ls -la
             mv webseite webseite_backup
@@ -42,10 +38,10 @@ jobs:
             <html lang='de'>
             <head>
               <meta charset='UTF-8'>
-              <title>Wartungsseite</title>
+              <title>Updating...</title>
             </head>
             <body>
-              <h1>Hiiiiii</h1>
+              <h1 style="font-family:Arial">Updating...</h1>
             </body>
             </html>" > webseite/dist/index.html
             ls -la webseite
