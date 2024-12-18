@@ -1,8 +1,8 @@
 {
   "main": {
     "name": {
-        "first": "Jakob",
-        "last": "Fischer"
+        "first": "Hello",
+        "last": "World!"
     },
     "logo": true,
     "title": "PHOTOGRAPHY",
@@ -91,6 +91,21 @@
           }
         ]
       }
+    ]
+  },
+"portfolio": {
+  "defaultFilter": "Animals",
+  "projects": [
+    {"filter": "Weddings",
+    "number": "7"},
+    {"filter": "Portraits",
+    "number": "5"},
+    {"filter": "Couples",
+    "number": "3"},
+    {"filter": "Drone",
+      "number": "2"},
+    {"filter": "Animals",
+    "number": "7"}
     ]
 },
     "contact":{

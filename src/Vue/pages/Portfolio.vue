@@ -35,8 +35,8 @@
 
         <div class="grid-container">
           <div  v-for="(item, index) in filteredProjects" :key="index" :class="[item.upright? uprightClasss : horizontalClass , gridItem, portfolioItem]">
-            <img :src="require(`../../assets/images/portfolio/${item.image}`)"  :class="[item.upright? uprightClasss : horizontalClass , gridItem]"/>
-            <div class="overlay" @click="openLightbox(require(`../../assets/images/portfolio/${item.image}`))"></div>
+            <img :src="require(`../../assets/images/newPortfolio/${item.image}`)"  :class="[item.upright? uprightClasss : horizontalClass , gridItem]"/>
+            <div class="overlay" @click="openLightbox(require(`../../assets/images/newPortfolio/${item.image}`), item.image)"></div>
           </div>
         </div>
 
@@ -49,6 +49,7 @@
 
 
 import data from "../../data/data.json";
+import imageData from "../../data/imageData.json";
 import Arrow from "../components/Arrow.vue";
 
 export default {
@@ -60,21 +61,21 @@ export default {
   data() {
 
     return {
-      projects: data.portfolio.projects,
+      projects: imageData.portfolio.projects,
       heading: data.main.headings.portfolio,
-      currentFilter: data.portfolio.defaultFilter,
+      currentFilter: imageData.portfolio.defaultFilter,
       isLightboxVisible: false,
       image_src: ``,
       horizontalClass: 'horizontalClass',
       gridItem: 'grid-item',
       uprightClasss: 'uprightClass',
-      portfolioItem: 'portfolio-item'
+      portfolioItem: 'portfolio-item',
     };
   },
 
   computed: {
     filteredProjects() {
-      var projects = data.portfolio.projects;
+      var projects = imageData.portfolio.projects;
       var filter = this.currentFilter;
       var filtered = projects.filter(function(x) {
         return x.filter === filter;
@@ -83,7 +84,7 @@ export default {
     },
     filters() {
       var filterList = [];
-      var projects = data.portfolio.projects;
+      var projects = imageData.portfolio.projects;
       filterList = projects.filter(function(x) {
         if (!filterList.includes(x.filter)) {
           filterList.push(x.filter);
@@ -98,9 +99,10 @@ export default {
     setFilter(event) {
       this.currentFilter = event.target.dataset.filter;
     },
-    openLightbox(src){
+    openLightbox(src, folder){
 
-      this.image_src=src;
+      this.image_src=src
+      this.image_folder = folder.split('/')[0];
       this.isLightboxVisible = true;
 
     },
@@ -108,34 +110,30 @@ export default {
     closeLightbox(){
       this.isLightboxVisible = false;
     },
-    nextbtn(src){
-
+    nextbtn(src) {
       var tmpescr = src.split('.');
-      console.log();
-      var tmpescrNumber = cutStringFromCharToBack(tmpescr[0], 'e')
-      tmpescrNumber = parseInt(tmpescrNumber, 10) + 1;
-      var tmpescrFile = cutStringFromCharToBack(tmpescr[0], '/')
-      tmpescrFile=cutStringFromCharToStart(tmpescrFile, 'e')
-      console.log(tmpescrFile);
-
-      this.image_src = require(`../../assets/images/portfolio/${tmpescrFile}/${tmpescrFile}${tmpescrNumber}.jpg`);
+      var tmpeScrFile = cutStringFromCharToBack(tmpescr[0], '/')  +".jpg"
+      var projects = imageData.portfolio.projects;
+      const currentIndex = projects.findIndex((project) => project.title === tmpeScrFile);
+      const currentFilter = projects[currentIndex].filter;
+      if (projects[currentIndex + 1].filter === currentFilter) {
+        var newScrFile = projects[currentIndex + 1].image; // Gib das 'image' des nächsten passenden Eintrags zurück
+      }
+      this.image_src = require(`../../assets/images/newPortfolio/${newScrFile}`);
       console.log(this.image_src);
-
     },
 
     prevbtn(src) {
-
       var tmpescr = src.split('.');
-      console.log();
-      var tmpescrNumber = cutStringFromCharToBack(tmpescr[0], 'e')
-      tmpescrNumber = parseInt(tmpescrNumber, 10) - 1;
-      var tmpescrFile = cutStringFromCharToBack(tmpescr[0], '/')
-      tmpescrFile=cutStringFromCharToStart(tmpescrFile, 'e')
-      console.log(tmpescrFile);
-
-      this.image_src = require(`../../assets/images/portfolio/${tmpescrFile}/${tmpescrFile}${tmpescrNumber}.jpg`);
+      var tmpeScrFile = cutStringFromCharToBack(tmpescr[0], '/')  +".jpg"
+      var projects = imageData.portfolio.projects;
+      const currentIndex = projects.findIndex((project) => project.title === tmpeScrFile);
+      const currentFilter = projects[currentIndex].filter;
+      if (projects[currentIndex - 1].filter === currentFilter) {
+        var newScrFile = projects[currentIndex - 1].image; // Gib das 'image' des nächsten passenden Eintrags zurück
+      }
+      this.image_src = require(`../../assets/images/newPortfolio/${newScrFile}`);
       console.log(this.image_src);
-
     },
     handleKeyDown(event) {
       console.log(event.key);
@@ -153,16 +151,6 @@ function cutStringFromCharToBack(string, char) {
   if (index !== -1) {
     // Schneidet den String ab dem gefundenen Index ab
     return string.substring(index + 1);
-  }
-  // Gibt den Originalstring zurück, falls das Zeichen nicht gefunden wird
-  return "";
-}
-
-function cutStringFromCharToStart(string, char){
-  const index = string.lastIndexOf(char);
-  if (index !== -1) {
-    // Schneidet den String ab dem gefundenen Index ab
-    return string.substring(0, index+1);
   }
   // Gibt den Originalstring zurück, falls das Zeichen nicht gefunden wird
   return "";
