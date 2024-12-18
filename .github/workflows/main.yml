@@ -36,7 +36,7 @@ jobs:
             ls -la
             mv webseite webseite_backup
             ls -la
-            mkdir webseite
+            mkdir webseite/dist
             ls -la
             echo "<!DOCTYPE html>
             <html lang='de'>
@@ -47,7 +47,7 @@ jobs:
             <body>
               <h1>Hiiiiii</h1>
             </body>
-            </html>" > webseite/index.html
+            </html>" > webseite/dist/index.html
             ls -la webseite
 
       - name: Install Dependencies and Build
