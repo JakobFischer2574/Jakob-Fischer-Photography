@@ -195,6 +195,12 @@
         "upright": false
       },
       {
+        "title": "portraits_16_V.jpg",
+        "image": "B_portraitPicture/portraits_16_V.jpg",
+        "filter": "portraits",
+        "upright": true
+      },
+      {
         "title": "couples_01_V.jpg",
         "image": "C_couplePicture/couples_01_V.jpg",
         "filter": "couples",
