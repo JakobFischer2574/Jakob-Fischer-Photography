@@ -42,6 +42,13 @@ jobs:
             rm -rf webseite_backup
             ls -la
             mv webseite webseite_backup
+            ls -la
+            mkdir webseite
+            ls -la
+            cp src/update/index.html webseite/index.html
+            ls -la webseite
+            
+            
 
  # Deploy only the dist folder via SFTP
       - name: SFTP Deploy
@@ -52,6 +59,6 @@ jobs:
           port: 22 # default is 22
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
           local_path: dist # Deploy only the contents of the dist folder
-          remote_path: webseite
+          remote_path: /webseite
           args: '-o ConnectTimeout=5'
     
