@@ -295,12 +295,63 @@ header {
 
 
     }
+
 #portfolio .bigImage img{
   max-width: 80%;
   max-height: 80%;
   transition: transform 0.3s;
   border-radius: 10px;
 }
+
+#portfolio .grid-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px; /* Abstände zwischen den Feldern */
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1300px) {
+  #portfolio .grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px; /* Abstände zwischen den Feldern */
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #portfolio .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; /* Abstände zwischen den Feldern */
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+  }
+}
+#portfolio .grid-item{
+  width: 100%;;
+  object-fit: cover;
+  height: 250px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+  #portfolio .grid-item{
+    width: 100%;;
+    object-fit: cover;
+    height: 150px;
+    overflow: hidden;}
+}
+#portfolio .horizontalClass{
+  width: 100%;
+  grid-column: span 2;
+}
+
 
 #contact .social-item {
   padding: 0 0.5rem;

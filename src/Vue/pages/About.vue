@@ -22,27 +22,14 @@
           <p v-if="languageDE" id="about-content">
             <span id="greeting">{{about.greetingDE}} {{ name }}! </span>
             <span id="bio" v-html="about.bioDE"></span>
-            <i class="fas fa-language" @click="languageSwitch"></i>
+            <i class="fas fa-language" style="margin:20px" @click="languageSwitch"></i>
           </p>
           <p v-if="!languageDE" id="about-content">
             <span id="greeting">{{about.greetingEN}} {{ name }}! </span>
             <span id="bio" v-html="about.bioEN"></span>
-            <i class="fas fa-language" @click="languageSwitch"></i>
+            <i class="fas fa-language" style="margin:20px" @click="languageSwitch"></i>
           </p>
         </div>
-
-<!--        <div-->
-<!--          class="col-sm-12 col-md-4 flex-col"-->
-<!--          data-aos="fade-right"-->
-<!--          data-aos-duration="1000"-->
-<!--        >-->
-<!--          <ul class="list-group list-group-flush">-->
-<!--            <li v-for="item in facts" :key="item.name" class="list-group-item">-->
-<!--              <h3 class="d-inline">{{ item.name }}: </h3>-->
-<!--              <br class="d-md-none" />{{ item.value }}-->
-<!--            </li>-->
-<!--          </ul>-->
-<!--        </div>-->
       </div>
     </div>
 
