@@ -48,6 +48,7 @@ jobs:
 
       - name: Install Dependencies and Build
         run: |
+          npm i sharp
           npm install
           npm run build
             
