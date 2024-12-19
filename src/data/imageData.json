@@ -3,332 +3,332 @@
     "defaultFilter": "weddings",
     "projects": [
       {
-        "title": "weddings_01_V.jpg",
-        "image": "A_weddingPicture/weddings_01_V.jpg",
+        "title": "weddings_01_V.webp",
+        "image": "A_weddings/weddings_01_V.webp",
         "filter": "weddings",
         "upright": true
       },
       {
-        "title": "weddings_02_H.jpg",
-        "image": "A_weddingPicture/weddings_02_H.jpg",
-        "filter": "weddings",
-        "upright": false
-      },
-      {
-        "title": "weddings_03_V.jpg",
-        "image": "A_weddingPicture/weddings_03_V.jpg",
-        "filter": "weddings",
-        "upright": true
-      },
-      {
-        "title": "weddings_04_H.jpg",
-        "image": "A_weddingPicture/weddings_04_H.jpg",
+        "title": "weddings_02_H.webp",
+        "image": "A_weddings/weddings_02_H.webp",
         "filter": "weddings",
         "upright": false
       },
       {
-        "title": "weddings_05_H.jpg",
-        "image": "A_weddingPicture/weddings_05_H.jpg",
+        "title": "weddings_03_V.webp",
+        "image": "A_weddings/weddings_03_V.webp",
+        "filter": "weddings",
+        "upright": true
+      },
+      {
+        "title": "weddings_04_H.webp",
+        "image": "A_weddings/weddings_04_H.webp",
         "filter": "weddings",
         "upright": false
       },
       {
-        "title": "weddings_06_V.jpg",
-        "image": "A_weddingPicture/weddings_06_V.jpg",
-        "filter": "weddings",
-        "upright": true
-      },
-      {
-        "title": "weddings_07_H.jpg",
-        "image": "A_weddingPicture/weddings_07_H.jpg",
+        "title": "weddings_05_H.webp",
+        "image": "A_weddings/weddings_05_H.webp",
         "filter": "weddings",
         "upright": false
       },
       {
-        "title": "weddings_08_V.jpg",
-        "image": "A_weddingPicture/weddings_08_V.jpg",
+        "title": "weddings_06_V.webp",
+        "image": "A_weddings/weddings_06_V.webp",
         "filter": "weddings",
         "upright": true
       },
       {
-        "title": "weddings_09_V.jpg",
-        "image": "A_weddingPicture/weddings_09_V.jpg",
-        "filter": "weddings",
-        "upright": true
-      },
-      {
-        "title": "weddings_10_H.jpg",
-        "image": "A_weddingPicture/weddings_10_H.jpg",
+        "title": "weddings_07_H.webp",
+        "image": "A_weddings/weddings_07_H.webp",
         "filter": "weddings",
         "upright": false
       },
       {
-        "title": "weddings_11_V.jpg",
-        "image": "A_weddingPicture/weddings_11_V.jpg",
+        "title": "weddings_08_V.webp",
+        "image": "A_weddings/weddings_08_V.webp",
         "filter": "weddings",
         "upright": true
       },
       {
-        "title": "weddings_12_V.jpg",
-        "image": "A_weddingPicture/weddings_12_V.jpg",
+        "title": "weddings_09_V.webp",
+        "image": "A_weddings/weddings_09_V.webp",
         "filter": "weddings",
         "upright": true
       },
       {
-        "title": "weddings_13_V.jpg",
-        "image": "A_weddingPicture/weddings_13_V.jpg",
-        "filter": "weddings",
-        "upright": true
-      },
-      {
-        "title": "weddings_14_V.jpg",
-        "image": "A_weddingPicture/weddings_14_V.jpg",
-        "filter": "weddings",
-        "upright": true
-      },
-      {
-        "title": "weddings_15_H.jpg",
-        "image": "A_weddingPicture/weddings_15_H.jpg",
+        "title": "weddings_10_H.webp",
+        "image": "A_weddings/weddings_10_H.webp",
         "filter": "weddings",
         "upright": false
       },
       {
-        "title": "weddings_16_H.jpg",
-        "image": "A_weddingPicture/weddings_16_H.jpg",
-        "filter": "weddings",
-        "upright": false
-      },
-      {
-        "title": "weddings_17_V.jpg",
-        "image": "A_weddingPicture/weddings_17_V.jpg",
+        "title": "weddings_11_V.webp",
+        "image": "A_weddings/weddings_11_V.webp",
         "filter": "weddings",
         "upright": true
       },
       {
-        "title": "portraits_01_V.jpg",
-        "image": "B_portraitPicture/portraits_01_V.jpg",
+        "title": "weddings_12_V.webp",
+        "image": "A_weddings/weddings_12_V.webp",
+        "filter": "weddings",
+        "upright": true
+      },
+      {
+        "title": "weddings_13_V.webp",
+        "image": "A_weddings/weddings_13_V.webp",
+        "filter": "weddings",
+        "upright": true
+      },
+      {
+        "title": "weddings_14_V.webp",
+        "image": "A_weddings/weddings_14_V.webp",
+        "filter": "weddings",
+        "upright": true
+      },
+      {
+        "title": "weddings_15_H.webp",
+        "image": "A_weddings/weddings_15_H.webp",
+        "filter": "weddings",
+        "upright": false
+      },
+      {
+        "title": "weddings_16_H.webp",
+        "image": "A_weddings/weddings_16_H.webp",
+        "filter": "weddings",
+        "upright": false
+      },
+      {
+        "title": "weddings_17_V.webp",
+        "image": "A_weddings/weddings_17_V.webp",
+        "filter": "weddings",
+        "upright": true
+      },
+      {
+        "title": "portraits_01_V.webp",
+        "image": "B_portraits/portraits_01_V.webp",
         "filter": "portraits",
         "upright": true
       },
       {
-        "title": "portraits_02_V.jpg",
-        "image": "B_portraitPicture/portraits_02_V.jpg",
+        "title": "portraits_02_V.webp",
+        "image": "B_portraits/portraits_02_V.webp",
         "filter": "portraits",
         "upright": true
       },
       {
-        "title": "portraits_03_H.jpg",
-        "image": "B_portraitPicture/portraits_03_H.jpg",
+        "title": "portraits_03_H.webp",
+        "image": "B_portraits/portraits_03_H.webp",
         "filter": "portraits",
         "upright": false
       },
       {
-        "title": "portraits_04_V.jpg",
-        "image": "B_portraitPicture/portraits_04_V.jpg",
+        "title": "portraits_04_V.webp",
+        "image": "B_portraits/portraits_04_V.webp",
         "filter": "portraits",
         "upright": true
       },
       {
-        "title": "portraits_05_V.jpg",
-        "image": "B_portraitPicture/portraits_05_V.jpg",
+        "title": "portraits_05_V.webp",
+        "image": "B_portraits/portraits_05_V.webp",
         "filter": "portraits",
         "upright": true
       },
       {
-        "title": "portraits_06_V.jpg",
-        "image": "B_portraitPicture/portraits_06_V.jpg",
+        "title": "portraits_06_V.webp",
+        "image": "B_portraits/portraits_06_V.webp",
         "filter": "portraits",
         "upright": true
       },
       {
-        "title": "portraits_07_V.jpg",
-        "image": "B_portraitPicture/portraits_07_V.jpg",
+        "title": "portraits_07_V.webp",
+        "image": "B_portraits/portraits_07_V.webp",
         "filter": "portraits",
         "upright": true
       },
       {
-        "title": "portraits_08_V.jpg",
-        "image": "B_portraitPicture/portraits_08_V.jpg",
+        "title": "portraits_08_V.webp",
+        "image": "B_portraits/portraits_08_V.webp",
         "filter": "portraits",
         "upright": true
       },
       {
-        "title": "portraits_09_H.jpg",
-        "image": "B_portraitPicture/portraits_09_H.jpg",
+        "title": "portraits_09_H.webp",
+        "image": "B_portraits/portraits_09_H.webp",
         "filter": "portraits",
         "upright": false
       },
       {
-        "title": "portraits_10_V.jpg",
-        "image": "B_portraitPicture/portraits_10_V.jpg",
+        "title": "portraits_10_V.webp",
+        "image": "B_portraits/portraits_10_V.webp",
         "filter": "portraits",
         "upright": true
       },
       {
-        "title": "portraits_11_V.jpg",
-        "image": "B_portraitPicture/portraits_11_V.jpg",
+        "title": "portraits_11_V.webp",
+        "image": "B_portraits/portraits_11_V.webp",
         "filter": "portraits",
         "upright": true
       },
       {
-        "title": "portraits_12_V.jpg",
-        "image": "B_portraitPicture/portraits_12_V.jpg",
+        "title": "portraits_12_V.webp",
+        "image": "B_portraits/portraits_12_V.webp",
         "filter": "portraits",
         "upright": true
       },
       {
-        "title": "portraits_13_V.jpg",
-        "image": "B_portraitPicture/portraits_13_V.jpg",
+        "title": "portraits_13_V.webp",
+        "image": "B_portraits/portraits_13_V.webp",
         "filter": "portraits",
         "upright": true
       },
       {
-        "title": "portraits_14_V.jpg",
-        "image": "B_portraitPicture/portraits_14_V.jpg",
+        "title": "portraits_14_V.webp",
+        "image": "B_portraits/portraits_14_V.webp",
         "filter": "portraits",
         "upright": true
       },
       {
-        "title": "portraits_15_H.jpg",
-        "image": "B_portraitPicture/portraits_15_H.jpg",
+        "title": "portraits_15_H.webp",
+        "image": "B_portraits/portraits_15_H.webp",
         "filter": "portraits",
         "upright": false
       },
       {
-        "title": "portraits_16_V.jpg",
-        "image": "B_portraitPicture/portraits_16_V.jpg",
+        "title": "portraits_16_V.webp",
+        "image": "B_portraits/portraits_16_V.webp",
         "filter": "portraits",
         "upright": true
       },
       {
-        "title": "couples_01_V.jpg",
-        "image": "C_couplePicture/couples_01_V.jpg",
+        "title": "couples_01_V.webp",
+        "image": "C_couples/couples_01_V.webp",
         "filter": "couples",
         "upright": true
       },
       {
-        "title": "couples_02_V.jpg",
-        "image": "C_couplePicture/couples_02_V.jpg",
+        "title": "couples_02_V.webp",
+        "image": "C_couples/couples_02_V.webp",
         "filter": "couples",
         "upright": true
       },
       {
-        "title": "couples_03_V.jpg",
-        "image": "C_couplePicture/couples_03_V.jpg",
+        "title": "couples_03_V.webp",
+        "image": "C_couples/couples_03_V.webp",
         "filter": "couples",
         "upright": true
       },
       {
-        "title": "couples_04_V.jpg",
-        "image": "C_couplePicture/couples_04_V.jpg",
+        "title": "couples_04_V.webp",
+        "image": "C_couples/couples_04_V.webp",
         "filter": "couples",
         "upright": true
       },
       {
-        "title": "couples_05_V.jpg",
-        "image": "C_couplePicture/couples_05_V.jpg",
+        "title": "couples_05_V.webp",
+        "image": "C_couples/couples_05_V.webp",
         "filter": "couples",
         "upright": true
       },
       {
-        "title": "couples_06_H.jpg",
-        "image": "C_couplePicture/couples_06_H.jpg",
+        "title": "couples_06_H.webp",
+        "image": "C_couples/couples_06_H.webp",
         "filter": "couples",
         "upright": false
       },
       {
-        "title": "couples_07_V.jpg",
-        "image": "C_couplePicture/couples_07_V.jpg",
+        "title": "couples_07_V.webp",
+        "image": "C_couples/couples_07_V.webp",
         "filter": "couples",
         "upright": true
       },
       {
-        "title": "couples_08_V.jpg",
-        "image": "C_couplePicture/couples_08_V.jpg",
+        "title": "couples_08_V.webp",
+        "image": "C_couples/couples_08_V.webp",
         "filter": "couples",
         "upright": true
       },
       {
-        "title": "couples_09_V.jpg",
-        "image": "C_couplePicture/couples_09_V.jpg",
+        "title": "couples_09_V.webp",
+        "image": "C_couples/couples_09_V.webp",
         "filter": "couples",
         "upright": true
       },
       {
-        "title": "couples_10_V.jpg",
-        "image": "C_couplePicture/couples_10_V.jpg",
+        "title": "couples_10_V.webp",
+        "image": "C_couples/couples_10_V.webp",
         "filter": "couples",
         "upright": true
       },
       {
-        "title": "animals_01_H.jpg",
-        "image": "D_animalPicture/animals_01_H.jpg",
+        "title": "animals_01_H.webp",
+        "image": "D_animals/animals_01_H.webp",
         "filter": "animals",
         "upright": false
       },
       {
-        "title": "animals_02_H.jpg",
-        "image": "D_animalPicture/animals_02_H.jpg",
+        "title": "animals_02_H.webp",
+        "image": "D_animals/animals_02_H.webp",
         "filter": "animals",
         "upright": false
       },
       {
-        "title": "animals_03_H.jpg",
-        "image": "D_animalPicture/animals_03_H.jpg",
+        "title": "animals_03_H.webp",
+        "image": "D_animals/animals_03_H.webp",
         "filter": "animals",
         "upright": false
       },
       {
-        "title": "animals_04_H.jpg",
-        "image": "D_animalPicture/animals_04_H.jpg",
+        "title": "animals_04_H.webp",
+        "image": "D_animals/animals_04_H.webp",
         "filter": "animals",
         "upright": false
       },
       {
-        "title": "animals_05_V.jpg",
-        "image": "D_animalPicture/animals_05_V.jpg",
+        "title": "animals_05_V.webp",
+        "image": "D_animals/animals_05_V.webp",
         "filter": "animals",
         "upright": true
       },
       {
-        "title": "animals_06_V.jpg",
-        "image": "D_animalPicture/animals_06_V.jpg",
+        "title": "animals_06_V.webp",
+        "image": "D_animals/animals_06_V.webp",
         "filter": "animals",
         "upright": true
       },
       {
-        "title": "animals_07_H.jpg",
-        "image": "D_animalPicture/animals_07_H.jpg",
+        "title": "animals_07_H.webp",
+        "image": "D_animals/animals_07_H.webp",
         "filter": "animals",
         "upright": false
       },
       {
-        "title": "drone_01_H.jpg",
-        "image": "E_dronePicture/drone_01_H.jpg",
+        "title": "drone_01_H.webp",
+        "image": "E_drone/drone_01_H.webp",
         "filter": "drone",
         "upright": false
       },
       {
-        "title": "drone_02_H.jpg",
-        "image": "E_dronePicture/drone_02_H.jpg",
+        "title": "drone_02_H.webp",
+        "image": "E_drone/drone_02_H.webp",
         "filter": "drone",
         "upright": false
       },
       {
-        "title": "drone_03_H.jpg",
-        "image": "E_dronePicture/drone_03_H.jpg",
+        "title": "drone_03_H.webp",
+        "image": "E_drone/drone_03_H.webp",
         "filter": "drone",
         "upright": false
       },
       {
-        "title": "drone_04_H.jpg",
-        "image": "E_dronePicture/drone_04_H.jpg",
+        "title": "drone_04_H.webp",
+        "image": "E_drone/drone_04_H.webp",
         "filter": "drone",
         "upright": false
       },
       {
-        "title": "drone_05_H.jpg",
-        "image": "E_dronePicture/drone_05_H.jpg",
+        "title": "drone_05_H.webp",
+        "image": "E_drone/drone_05_H.webp",
         "filter": "drone",
         "upright": false
       }

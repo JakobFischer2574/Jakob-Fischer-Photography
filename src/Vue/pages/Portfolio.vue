@@ -28,15 +28,15 @@
         <div v-if="isLightboxVisible" class="bigImage"  tabindex="0"   @keydown.esc="closeLightbox">
 
           <button class="prevbtn" @click="prevbtn(image_src)">&lt;</button>
-          <img :src="image_src" @click="closeLightbox" />
+          <img :src="image_src" @click="closeLightbox"/>
           <button class="nextbtn" @click="nextbtn(image_src)">></button>
           <button class="backbtn" @click="closeLightbox">x</button>
         </div>
 
         <div class="grid-container">
           <div  v-for="(item, index) in filteredProjects" :key="index" :class="[item.upright? uprightClasss : horizontalClass , gridItem, portfolioItem]">
-            <img :src="require(`../../assets/images/newPortfolio/${item.image}`)"  :class="[item.upright? uprightClasss : horizontalClass , gridItem]"/>
-            <div class="overlay" @click="openLightbox(require(`../../assets/images/newPortfolio/${item.image}`), item.image)"></div>
+            <img  loading="lazy" :src="require(`../../assets/images/${this.imageFolder}/${item.image}`)"  :class="[item.upright? uprightClasss : horizontalClass , gridItem] "/>
+            <div class="overlay" @click="openLightbox(require(`../../assets/images/${this.imageFolder}/${item.image}`), item.image)"></div>
           </div>
         </div>
 
@@ -70,6 +70,7 @@ export default {
       gridItem: 'grid-item',
       uprightClasss: 'uprightClass',
       portfolioItem: 'portfolio-item',
+      imageFolder:'',
     };
   },
 
@@ -111,28 +112,29 @@ export default {
       this.isLightboxVisible = false;
     },
     nextbtn(src) {
+
       var tmpescr = src.split('.');
-      var tmpeScrFile = cutStringFromCharToBack(tmpescr[0], '/')  +".jpg"
+      var tmpeScrFile = cutStringFromCharToBack(tmpescr[0], '/')  +".webp"
       var projects = imageData.portfolio.projects;
       const currentIndex = projects.findIndex((project) => project.title === tmpeScrFile);
       const currentFilter = projects[currentIndex].filter;
       if (projects[currentIndex + 1].filter === currentFilter) {
         var newScrFile = projects[currentIndex + 1].image; // Gib das 'image' des nächsten passenden Eintrags zurück
       }
-      this.image_src = require(`../../assets/images/newPortfolio/${newScrFile}`);
+      this.image_src = require(`../../assets/images/${this.imageFolder}/${newScrFile}`);
       console.log(this.image_src);
     },
 
     prevbtn(src) {
       var tmpescr = src.split('.');
-      var tmpeScrFile = cutStringFromCharToBack(tmpescr[0], '/')  +".jpg"
+      var tmpeScrFile = cutStringFromCharToBack(tmpescr[0], '/')  +".webp"
       var projects = imageData.portfolio.projects;
       const currentIndex = projects.findIndex((project) => project.title === tmpeScrFile);
       const currentFilter = projects[currentIndex].filter;
       if (projects[currentIndex - 1].filter === currentFilter) {
         var newScrFile = projects[currentIndex - 1].image; // Gib das 'image' des nächsten passenden Eintrags zurück
       }
-      this.image_src = require(`../../assets/images/newPortfolio/${newScrFile}`);
+      this.image_src = require(`../../assets/images/${this.imageFolder}/${newScrFile}`);
       console.log(this.image_src);
     },
     handleKeyDown(event) {
@@ -144,7 +146,16 @@ export default {
       }
     }
   },
+
+  beforeMount() {
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    //const userAgent = navigator.userAgent.toLowerCase();
+    //const isPC = /windows|macintosh|linux|x11|chrome|firefox|safari|edge/.test(userAgent);
+    this.imageFolder = mediaQuery.matches ? 'portfolioMobile' : 'portfolioPC';
+    console.log(this.imageFolder)
+  }
 };
+
 
 function cutStringFromCharToBack(string, char) {
   const index = string.lastIndexOf(char);

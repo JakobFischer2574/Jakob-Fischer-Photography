@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Pfad zum Zielordner
-const targetDir = path.join(__dirname, './src/assets/images/newPortfolio');
+const targetDir = path.join(__dirname, './src/assets/images/portfolioPC');
 const outputFile = path.join(__dirname, './src/data/imageData.json');
 
 function readFilesRecursively(dir, basePath = '') {
