@@ -5,15 +5,17 @@
   "main": "main.js",
   "scripts": {
     "generate-files": "node generateFileList.js",
+    "generate-folder": "node generateFolder.js",
     "serve": "vue-cli-service serve",
-    "build": "npm run generate-files && vue-cli-service build",
+    "build": "npm run generate-folder && npm run generate-files && vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "vue": "^3.0.0",
     "jquery": "^3.6.0",
-    "typewriter-effect": "^2.18.0"
+    "sharp": "^0.33.5",
+    "typewriter-effect": "^2.18.0",
+    "vue": "^3.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
