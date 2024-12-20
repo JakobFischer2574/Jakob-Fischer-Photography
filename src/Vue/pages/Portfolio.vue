@@ -32,6 +32,7 @@
         <button class="backbtn" @click="closeLightbox">x</button>
       </div>
 
+
       <div class="grid-container">
         <div v-for="(item, index) in filteredProjects" :key="index"
              :class="[item.upright? uprightClasss : horizontalClass , gridItem, portfolioItem]">
@@ -53,6 +54,7 @@
 import data from "../../data/data.json";
 import imageData from "../../data/imageData.json";
 import Arrow from "../components/Arrow.vue";
+
 
 export default {
   name: "portfolio",
@@ -97,8 +99,11 @@ export default {
       return filterList;
     },
 
+
   },
   methods: {
+
+
     setFilter(event) {
       this.currentFilter = event.target.dataset.filter;
     },
@@ -120,8 +125,13 @@ export default {
       var projects = imageData.portfolio.projects;
       const currentIndex = projects.findIndex((project) => project.title === tmpeScrFile);
       const currentFilter = projects[currentIndex].filter;
-      if (projects[currentIndex + 1].filter === currentFilter) {
+      if (currentIndex === projects.length - 1) {
+        newScrFile = projects[projects.length - countFilter(this.currentFilter)].image;
+      } else if (projects[currentIndex + 1].filter === currentFilter) {
         var newScrFile = projects[currentIndex + 1].image; // Gib das 'image' des nächsten passenden Eintrags zurück
+      } else {
+        console.log(countFilter(this.currentFilter));
+        newScrFile = projects[(currentIndex + 1) - countFilter(this.currentFilter)].image;
       }
       this.image_src = require(`../../assets/images/${this.imageFolder}/${newScrFile}`);
       console.log(this.image_src);
@@ -133,9 +143,16 @@ export default {
       var projects = imageData.portfolio.projects;
       const currentIndex = projects.findIndex((project) => project.title === tmpeScrFile);
       const currentFilter = projects[currentIndex].filter;
-      if (projects[currentIndex - 1].filter === currentFilter) {
+      if (currentIndex === 0) {
+        newScrFile = projects[countFilter(this.currentFilter) - 1].image;
+      } else if (projects[currentIndex - 1].filter === currentFilter) {
         var newScrFile = projects[currentIndex - 1].image; // Gib das 'image' des nächsten passenden Eintrags zurück
+      } else {
+        console.log(countFilter(this.currentFilter));
+        console.log(currentIndex)
+        newScrFile = projects[currentIndex + countFilter(this.currentFilter) - 1].image;
       }
+
       this.image_src = require(`../../assets/images/${this.imageFolder}/${newScrFile}`);
       console.log(this.image_src);
     },
@@ -156,6 +173,8 @@ export default {
     this.imageFolder = mediaQuery.matches ? 'portfolioMobile' : 'portfolioPC';
     console.log(this.imageFolder)
   }
+
+
 };
 
 
@@ -168,6 +187,16 @@ function cutStringFromCharToBack(string, char) {
   // Gibt den Originalstring zurück, falls das Zeichen nicht gefunden wird
   return "";
 }
+
+function countFilter(filter) {
+  var projects = imageData.portfolio.projects;
+  var count = projects.filter(function (x) {
+    return x.filter === filter;
+  }).length;
+  return count;
+}
+
+
 </script>
 
 <style scoped>
