@@ -48,7 +48,6 @@ jobs:
 
       - name: Install Dependencies and Build
         run: |
-          npm i sharp
           npm install
           npm run build
             
@@ -63,5 +62,5 @@ jobs:
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
           local_path: dist # Deploy only the contents of the dist folder
           remote_path: webseite/
-          args: '-o ConnectTimeout=5'
+          args: '-o ConnectTimeout=5 -n'
     
