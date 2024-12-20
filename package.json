@@ -6,6 +6,7 @@
   "scripts": {
     "generate-files": "node generateFileList.js",
     "generate-folder": "node generateFolder.js",
+    "generate": "npm run generate-folder && npm run generate-files",
     "serve": "vue-cli-service serve",
     "build": "npm run generate-folder && npm run generate-files && vue-cli-service build",
     "lint": "vue-cli-service lint"

@@ -12,12 +12,12 @@ const destinationFolderMobile = path.join(__dirname, './src/assets/images/portfo
 // Funktion zum Kopieren und Verarbeiten von Bildern in Unterordnern
 async function processFolder(source, destination, width, quality) {
     if (!fs.existsSync(destination)) {
-        fs.mkdirSync(destination, { recursive: true });
+        fs.mkdirSync(destination, {recursive: true});
         console.log(`Ordner ${destination} wurde erstellt.`);
     }
 
     try {
-        let entries = fs.readdirSync(source, { withFileTypes: true });
+        let entries = fs.readdirSync(source, {withFileTypes: true});
 
         // Dateien sortieren
         let sortedEntries = entries.sort((a, b) => {
@@ -49,9 +49,9 @@ async function processFolder(source, destination, width, quality) {
                     destPath = path.join(destination, fileName);
 
                     await sharp(sourcePath)
-                        .resize({ width: newWidth })
+                        .resize({width: newWidth})
                         .toColourspace('srgb')
-                        .webp({ quality: quality })
+                        .webp({quality: quality})
                         .toFile(destPath);
 
                     console.log(`${entry.name} wurde als ${fileName} gespeichert.`);

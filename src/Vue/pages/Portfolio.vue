@@ -1,5 +1,5 @@
 <template>
-  <section id="portfolio" class="dark-section" >
+  <section id="portfolio" class="dark-section">
     <div class="container-fluid">
       <h1 class="section-header">{{ heading }}</h1>
 
@@ -7,16 +7,16 @@
       <div class="row filters">
         <ul class="list-inline mx-auto">
           <li
-            v-for="item in filters"
-            :key="item.title"
-            class="list-inline-item filter"
+              v-for="item in filters"
+              :key="item.title"
+              class="list-inline-item filter"
           >
             <a
-              class="nav-item"
-              :class="item.filter === currentFilter ? 'active' : null"
-              :data-filter="item.filter"
-              @click="setFilter"
-              >{{ item.filter }}
+                class="nav-item"
+                :class="item.filter === currentFilter ? 'active' : null"
+                :data-filter="item.filter"
+                @click="setFilter"
+            >{{ item.filter }}
             </a>
           </li>
         </ul>
@@ -24,24 +24,26 @@
       <!-- end of filters  -->
 
 
+      <div v-if="isLightboxVisible" class="bigImage" tabindex="0" @keydown.esc="closeLightbox">
 
-        <div v-if="isLightboxVisible" class="bigImage"  tabindex="0"   @keydown.esc="closeLightbox">
+        <button class="prevbtn" @click="prevbtn(image_src)">&lt;</button>
+        <img :src="image_src" @click="closeLightbox"/>
+        <button class="nextbtn" @click="nextbtn(image_src)">></button>
+        <button class="backbtn" @click="closeLightbox">x</button>
+      </div>
 
-          <button class="prevbtn" @click="prevbtn(image_src)">&lt;</button>
-          <img :src="image_src" @click="closeLightbox"/>
-          <button class="nextbtn" @click="nextbtn(image_src)">></button>
-          <button class="backbtn" @click="closeLightbox">x</button>
+      <div class="grid-container">
+        <div v-for="(item, index) in filteredProjects" :key="index"
+             :class="[item.upright? uprightClasss : horizontalClass , gridItem, portfolioItem]">
+          <img loading="lazy" :src="require(`../../assets/images/${this.imageFolder}/${item.image}`)"
+               :class="[item.upright? uprightClasss : horizontalClass , gridItem] "/>
+          <div class="overlay"
+               @click="openLightbox(require(`../../assets/images/${this.imageFolder}/${item.image}`), item.image)"></div>
         </div>
-
-        <div class="grid-container">
-          <div  v-for="(item, index) in filteredProjects" :key="index" :class="[item.upright? uprightClasss : horizontalClass , gridItem, portfolioItem]">
-            <img  loading="lazy" :src="require(`../../assets/images/${this.imageFolder}/${item.image}`)"  :class="[item.upright? uprightClasss : horizontalClass , gridItem] "/>
-            <div class="overlay" @click="openLightbox(require(`../../assets/images/${this.imageFolder}/${item.image}`), item.image)"></div>
-          </div>
-        </div>
+      </div>
 
     </div>
-    <Arrow />
+    <Arrow/>
   </section>
 </template>
 
@@ -70,7 +72,7 @@ export default {
       gridItem: 'grid-item',
       uprightClasss: 'uprightClass',
       portfolioItem: 'portfolio-item',
-      imageFolder:'',
+      imageFolder: '',
     };
   },
 
@@ -78,7 +80,7 @@ export default {
     filteredProjects() {
       var projects = imageData.portfolio.projects;
       var filter = this.currentFilter;
-      var filtered = projects.filter(function(x) {
+      var filtered = projects.filter(function (x) {
         return x.filter === filter;
       });
       return filtered;
@@ -86,7 +88,7 @@ export default {
     filters() {
       var filterList = [];
       var projects = imageData.portfolio.projects;
-      filterList = projects.filter(function(x) {
+      filterList = projects.filter(function (x) {
         if (!filterList.includes(x.filter)) {
           filterList.push(x.filter);
           return x.filter;
@@ -100,21 +102,21 @@ export default {
     setFilter(event) {
       this.currentFilter = event.target.dataset.filter;
     },
-    openLightbox(src, folder){
+    openLightbox(src, folder) {
 
-      this.image_src=src
+      this.image_src = src
       this.image_folder = folder.split('/')[0];
       this.isLightboxVisible = true;
 
     },
 
-    closeLightbox(){
+    closeLightbox() {
       this.isLightboxVisible = false;
     },
     nextbtn(src) {
 
       var tmpescr = src.split('.');
-      var tmpeScrFile = cutStringFromCharToBack(tmpescr[0], '/')  +".webp"
+      var tmpeScrFile = cutStringFromCharToBack(tmpescr[0], '/') + ".webp"
       var projects = imageData.portfolio.projects;
       const currentIndex = projects.findIndex((project) => project.title === tmpeScrFile);
       const currentFilter = projects[currentIndex].filter;
@@ -127,7 +129,7 @@ export default {
 
     prevbtn(src) {
       var tmpescr = src.split('.');
-      var tmpeScrFile = cutStringFromCharToBack(tmpescr[0], '/')  +".webp"
+      var tmpeScrFile = cutStringFromCharToBack(tmpescr[0], '/') + ".webp"
       var projects = imageData.portfolio.projects;
       const currentIndex = projects.findIndex((project) => project.title === tmpeScrFile);
       const currentFilter = projects[currentIndex].filter;

@@ -57,12 +57,13 @@ function generateFileList(dir, output) {
 function imageDirection(fileName) {
     var fileDirection = fileName.split('_')[2];
     fileDirection = fileDirection.split('.')[0];
-    if (fileDirection === "H"){
+    if (fileDirection === "H") {
         return false;
-    }else {
+    } else {
         return true;
     }
 
 }
+
 // Starte die Funktion
 generateFileList(targetDir, outputFile);

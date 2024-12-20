@@ -2,7 +2,7 @@
   <div class="banner">
     <div class="banner-text">
       <h1 class="display-text" style="font-weight: bold;">{{ name.first }} {{ name.last }}</h1>
-      <h2 id="typewriter">{{ title}}</h2>
+      <h2 id="typewriter">{{ title }}</h2>
 
     </div>
   </div>
