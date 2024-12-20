@@ -1,6 +1,9 @@
 .DS_Store
 node_modules
 /dist
+/src/assets/images/portfolioPC
+/src/assets/images/portfolioMobile
+/src/data/imageData.json
 
 # temporary ignore 
 /src/pages/Journey.vue
