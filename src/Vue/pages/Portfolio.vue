@@ -85,7 +85,7 @@ export default {
       var filtered = projects.filter(function (x) {
         return x.filter === filter;
       });
-      return filtered;
+      return filtered.reverse();
     },
     filters() {
       var filterList = [];
@@ -118,7 +118,7 @@ export default {
     closeLightbox() {
       this.isLightboxVisible = false;
     },
-    nextbtn(src) {
+    prevbtn(src) {
 
       var tmpescr = src.split('.');
       var tmpeScrFile = cutStringFromCharToBack(tmpescr[0], '/') + ".webp"
@@ -137,7 +137,7 @@ export default {
       console.log(this.image_src);
     },
 
-    prevbtn(src) {
+    nextbtn(src) {
       var tmpescr = src.split('.');
       var tmpeScrFile = cutStringFromCharToBack(tmpescr[0], '/') + ".webp"
       var projects = imageData.portfolio.projects;
