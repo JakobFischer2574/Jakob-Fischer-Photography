@@ -63,12 +63,10 @@ async function processFolder(source, destination, widthFactor, quality) {
     try {
         const entries = fs.readdirSync(source, { withFileTypes: true });
 
-        // Dateien sortieren (nach erster Nummer im Namen)
-        const sortedEntries = entries.sort((a, b) => {
-            const numA = parseInt((a.name.match(/\d+/) || [0])[0], 10);
-            const numB = parseInt((b.name.match(/\d+/) || [0])[0], 10);
-            return numA - numB;
-        });
+// Dateien sortieren (alphabetisch nach Name)
+        const sortedEntries = entries.sort((a, b) => a.name.localeCompare(b.name));
+
+
 
         let counter = 1;
 
