@@ -118,7 +118,7 @@ export default {
     closeLightbox() {
       this.isLightboxVisible = false;
     },
-    backbtn(src) {
+    nextbtn(src) {
 
       var tmpescr = src.split('.');
       var tmpeScrFile = cutStringFromCharToBack(tmpescr[0], '/') + ".webp"
