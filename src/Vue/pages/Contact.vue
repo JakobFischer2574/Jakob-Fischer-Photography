@@ -129,7 +129,7 @@
             <!--  </form>-->
         </div>
       </div>
-    </div>
+
 
     <div class="row arrow-container">
       <a class="arrow-icon" href="#">
