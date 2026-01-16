@@ -78,17 +78,7 @@
               </ul>
             </div>
           </div>
-        </div>
-        <div
-            class="col-sm-12 col-md-6 flex-col"
-            v-if="contact.form"
-
-        >
-          <h2 v-if="contact.formTitle !==''">{{ contact.formTitle }}</h2>
-
-          <!-- start of contact form  -->
-
-          <div class="container contact-form">
+    </div>
             <!--  <form :action="contact.formEndPoint" method="POST" target="_blank" enctype="multipart/form-data">-->
             <!--    <div class="form-group">-->
             <!--      <div class="input-group">-->
@@ -137,55 +127,6 @@
 
             <!--    <button type="submit">Submit</button>-->
             <!--  </form>-->
-
-
-            <form action="https://formkeep.com/f/879e512258d5"
-                  accept-charset="UTF-8"
-                  enctype="multipart/form-data"
-                  method="POST">
-              <input type="hidden" name="utf8" value="✓">
-              <div class="form-group">
-                <div class="input-group">
-                  <div class="input-group-prepend">
-            <span class="input-group-text bg-white">
-              <i class="fa fa-user"></i>&nbsp;
-            </span>
-                  </div>
-                  <input type="name" id="name" name="name" class="form-control border-left-0" placeholder="Name">
-                </div>
-              </div>
-
-              <div class="form-group">
-                <div class="input-group">
-                  <div class="input-group-prepend">
-            <span class="input-group-text bg-white">
-              <i class="fa fa-envelope"></i>
-            </span>
-                  </div>
-                  <input type="email" id="email-address" name="email" class="form-control border-left-0"
-                         placeholder="Email">
-                </div>
-              </div>
-
-              <div class="form-group">
-
-                <textarea type="text" id="text" multiple name="text" class="form-control" placeholder="Message" rows="5"
-                          required></textarea>
-              </div>
-
-              <button type="submit" class="btn">
-                <i class="fa fa-paper-plane"></i>
-                Send
-              </button>
-            </form>
-
-
-          </div>
-
-
-          <!-- end of contact form  -->
-
-
         </div>
       </div>
     </div>
